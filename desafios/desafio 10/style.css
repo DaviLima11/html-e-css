@@ -36,16 +36,20 @@ header{
 }
 
 header h1{
-    
+    line-height: 100%;
     color: white;
     font-weight: bold;
     font-family: var(--font-destaque);
-    font-size: 2.2em;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.795);
 }
 
 header p{
+    padding-top: 15px;
     color: white;
     padding-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.795);
+
 }
 
 nav{
@@ -66,15 +70,18 @@ a:hover{
     background-color: white;
     text-decoration: underline;
     border-radius: 3px;
+    color: black;
 }
 
 main{
-    max-width: 800px;
+    min-width: 320px;
+    max-width: 1000px;
     background-color: white;
     margin: auto;
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.322);
+    text-indent: 20px;
     
 }
 
@@ -98,6 +105,67 @@ main p{
 
 main img{
     width: 100%;
+}
+
+main a{
+    font-weight: bold;
+    color: #852610;
+    text-decoration: none;
+    background-color: #7a0c0041;
+    padding: 0px 4px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+main a::after{
+    content: '';
+}
+
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px 0px;
+}
+
+
+.video{
+    background-color: #e05151;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 58.8%;
+    position: relative;
+}
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+
+aside h3{
+    background-color: var(--cor4);
+    color: white;
+    margin: -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-position: inside; /**/
+    columns: 2; 
+}
+
+.bugdroid{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+
 }
 
 footer{

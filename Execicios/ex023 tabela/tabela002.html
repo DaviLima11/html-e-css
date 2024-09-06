@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+        border-collapse: collapse;
+        margin: auto;
+        width: 600px;
+        position: relative;
+        
+    }
+
+    td, th{
+        border: 1px solid black;
+        padding: 11px 5px 2px 6px;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: lightblue;
+    }
+
+    thead, tfoot{
+        background-color: lightblue;
+    }
+
+    tbody > tr:nth-child(2n-1){  /* pode usar o (2n) par(even) e imapar(odd) */
+        background-color: #d1cfcf;
+
+    }
+
+    .numero{
+        text-align: right;
+    }
+
+</style>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBOBY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Estados
+                <th scope="col" style="width: 200px;">Populção
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr><td>São Paulo</td>
+                <td class="numero">45 973 190</td>
+            </tr>
+            <tr><td>Minas Gerais</td>
+                <td class="numero">21 322 692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 219 679	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 850 513	</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 824 665</td>
+            </tr>
+            <tr><td>Rio Grande do Sul</td>
+                <td class="numero">11 229 915	
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8 664 306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">8 058 447</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7 350 483</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">4 281 209</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">4 145 040</td>
+            </tr>
+            <tr>
+                <td>Espírito dos Santos</td>
+                <td class="numero">4 102 129</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">População Total</th>
+                <td class="numero">212 583 720</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, minus eaque distinctio, alias iure expedita veniam labore quas debitis explicabo accusamus doloremque laudantium praesentium repudiandae sed maxime. Nemo, et molestiae!quibusdam?Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea esse. Id debitis velit dolorum quisquam ab illum, pariatur architecto? Eligendi quo aliquam vitae maiores similique corporis rerum repellendus illo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, minus eaque distinctio, alias iure expedita veniam labore quas debitis explicabo accusamus doloremque laudantium praesentium repudiandae sed maxime. Nemo, et molestiae!quibusdam?Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea esse. Id debitis velit dolorum quisquam ab illum, pariatur architecto? Eligendi quo aliquam vitae maiores similique corporis rerum repellendus illo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, minus eaque distinctio, alias iure expedita veniam labore quas debitis explicabo accusamus doloremque laudantium praesentium repudiandae sed maxime. Nemo, et molestiae!quibusdam?Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea esse. Id debitis velit dolorum quisquam ab illum, pariatur architecto? Eligendi quo aliquam vitae maiores similique corporis rerum repellendus illo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, minus eaque distinctio, alias iure expedita veniam labore quas debitis explicabo accusamus doloremque laudantium praesentium repudiandae sed maxime. Nemo, et molestiae!quibusdam?Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea esse. Id debitis velit dolorum quisquam ab illum, pariatur architecto? Eligendi quo aliquam vitae maiores similique corporis rerum repellendus illo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, minus eaque distinctio, alias iure expedita veniam labore quas debitis explicabo accusamus doloremque laudantium praesentium repudiandae sed maxime. Nemo, et molestiae!quibusdam?Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea esse. Id debitis velit dolorum quisquam ab illum, pariatur architecto? Eligendi quo aliquam vitae maiores similique corporis rerum repellendus illo?</p>
+</body>
+</html>

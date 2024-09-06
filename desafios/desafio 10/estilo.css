@@ -91,7 +91,7 @@ main{
     min-width: 300px;
     max-width: 1000px;
     padding: 20px;
-    box-shadow: 1px 3px 6px 2px rgba(0, 0, 0, 0.281);
+    box-shadow: 1px 3px 6px 2px rgba(0, 0, 0, 0.363);
     margin-bottom: 30px;
     border-radius: 0px 0px 10px 10px;
 }
@@ -143,7 +143,7 @@ main img.pequena{
 }
 
 .video{
-    background-color: #006177;
+    background-color: #408026;
     margin: 0px -20px 30px -20px;
     padding-bottom: 58.8%;
     position: relative;
